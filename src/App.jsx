@@ -1,5 +1,9 @@
 import Logo from './assets/logo.png';
-
+import slide from './assets/main_picture.png';
+import slide2 from './assets/main_picture2.png';
+import slide3 from './assets/main_picture3.png';
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel';
 
 
 function App() {
@@ -7,21 +11,14 @@ function App() {
   // TU WPISZ HTML
 
   return (
-    <>
-    <img src={Logo} className='logo'/> 
-    <header className='main-header'> "cała górna część strony"</header>
-      <section className=''> 
-        <p> Z pewnością widziałaś już nasz szeroki asortyment, w ofercie sklepu zajdziesz kosmetyki przeznaczone do każdego typu cery nawet dla tej najbardziej wymagającej! <br/>
-            Z myślą właśnie o Tobie przygotowaliśmy zakładkę, w której dostaniesz kosmetyki w najniższej cenie na rynku. Chcesz zostać łowcą okazji? — z nami kupisz tanio! <br/>
-            Oferta promocji tygodnia zmienia się nieregularnie, warto bacznie nas obserwować, nie wiadomo kiedy pojawią się koleje perełki. <br/>
-            Uzupełnij swoją kosmetyczkę o dodatkowe kosmetyki do pielęgnacji twarzy i koniecznie zaapatrzyj się w krem z SPF, o którym musisz pamiętać cały rok! <br/>
-            Koniecznie sprawdź, czy w promocji są maseczki pielęgnacyjne, nawilżenie to podstawa. <br/>
-            W twojej kolekcji oczywiście nie może zabraknąć produktów do makijażu, znajdź swój idealny odcień podkładu, posiadamy szeroką gamę kolorów do cery porcelanowej oraz ciemnej i mocno opalonej. <br/>
-            Ściągamy maski, a to dobry powód, aby zaopatrzyć się w nowe produkty do pielęgnacji ust, kolorowa pomadka, a może bezbarwny błyszczyk?  <br/>
-            Jeżeli myślisz o profesjonalnej pielegnacji całego ciała od stóp do głów, koniecznie szukaj w promocyjnej cenie kosmetyków marki Farmona - zapewniają świadome dbanie o włosy i poprawę ich struktury. <br/>
-            Poznawaj nowe marki niedostępne jeszcze w drogeriach i testuj nowości w niskich cenach! Odkrywaj z nami nowości z całego świata! Bądź oryginalna i upoluj trudno dostępne kosmetyki! <br/></p>
-     </section>
-
+    <> 
+        <img src={Logo} className='logo'/> 
+            <header className='main-header'> "cała górna część strony"</header>            
+            <Carousel autoPlay infiniteLoop  showStatus={false} showThumbs={false}>
+                <img src={slide} alt="cosmetic"/>
+                <img src={slide2} alt="cosmetic"/>
+                <img src={slide3} alt="cosmetic"/>
+            </Carousel>
     <section>
         <h1 className="first">Drogeria z kosmetykami eZebra</h1>
             <storng>Sklep internetowy z kosmetykami i perfumami ezebra.pl </storng>
@@ -57,6 +54,7 @@ function App() {
             </div>
     </section>        
     </>
+
   )
 }
 
