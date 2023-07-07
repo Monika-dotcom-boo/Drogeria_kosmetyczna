@@ -1,10 +1,16 @@
+import Logo from './assets/logo.png';
+
+
+
 function App() {
   
   // TU WPISZ HTML
 
   return (
     <>
-      <section> 
+    <img src={Logo} className='logo'/> 
+    <header className='main-header'> "cała górna część strony"</header>
+      <section className=''> 
         <p> Z pewnością widziałaś już nasz szeroki asortyment, w ofercie sklepu zajdziesz kosmetyki przeznaczone do każdego typu cery nawet dla tej najbardziej wymagającej! <br/>
             Z myślą właśnie o Tobie przygotowaliśmy zakładkę, w której dostaniesz kosmetyki w najniższej cenie na rynku. Chcesz zostać łowcą okazji? — z nami kupisz tanio! <br/>
             Oferta promocji tygodnia zmienia się nieregularnie, warto bacznie nas obserwować, nie wiadomo kiedy pojawią się koleje perełki. <br/>
