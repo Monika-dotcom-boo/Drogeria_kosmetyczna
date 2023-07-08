@@ -2,8 +2,9 @@ import Logo from './assets/logo.png';
 import slide from './assets/main_picture.png';
 import slide2 from './assets/main_picture2.png';
 import slide3 from './assets/main_picture3.png';
+import newBrands from './assets/new_brands.png';
 import popularProducts from './assets/popular_brands.png';
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -21,17 +22,20 @@ function App() {
                 <img src={slide3} alt="cosmetic"/>
             </Carousel>
         <div className=".box-layout">
-            <div className="new-brands"> Nowe marki </div>
+            <div className="headline-name"> Nowe marki </div>
+                <img src={newBrands} alt="cosmetic"/>
+
+            <div className="headline-name"> Popularne marki </div>
+                 <img src={popularProducts} alt="cosmetic"/>
         
             <Carousel autoPlay infiniteLoop  showStatus={false} showThumbs={false}>
                
             </Carousel>
-            <div className="new-brands"> Popularne marki </div>
-            <img src={popularProducts} alt="cosmetic"/>
+
             </div> 
     <section>
         <h1 className="first">Drogeria z kosmetykami eZebra</h1>
-            <storng>Sklep internetowy z kosmetykami i perfumami ezebra.pl </storng>
+            <strong>Sklep internetowy z kosmetykami i perfumami ezebra.pl </strong>
                 <div className="one">Znajdziesz tu wyjątkowo bogaty asortyment, taki, który uwzględnia potrzeby wszystkich Klientów. Zarówno te cenowe, jak i związane z różnorodnością produktów. Artykuły drogerii internetowej ezebra.pl podzielone zostały na kilka kategorii, co zdecydowanie ułatwia zakupy i pozwala zaoszczędzić czas.<br/>
                                 Odpowiadając na potrzeby Klientów drogeria rozwija swój asortyment i wprowadza do niego kolejne produkty oraz kategorie. Wśród nich znajdują się następujące grupy produktów: Makijaż, Pielęgnacja, Paznokcie, Akcesoria, Perfumy, Zdrowie, Dom, Men, Zestawy Prezentowe, Promocje, Nowości oraz Soczewki.<br/>
                 </div>
