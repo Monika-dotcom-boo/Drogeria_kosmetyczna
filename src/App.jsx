@@ -2,6 +2,7 @@ import Logo from './assets/logo.png';
 import slide from './assets/main_picture.png';
 import slide2 from './assets/main_picture2.png';
 import slide3 from './assets/main_picture3.png';
+import popularProducts from './assets/popular_brands.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel';
 
@@ -19,6 +20,15 @@ function App() {
                 <img src={slide2} alt="cosmetic"/>
                 <img src={slide3} alt="cosmetic"/>
             </Carousel>
+        <div className=".box-layout">
+            <div className="new-brands"> Nowe marki </div>
+        
+            <Carousel autoPlay infiniteLoop  showStatus={false} showThumbs={false}>
+               
+            </Carousel>
+            <div className="new-brands"> Popularne marki </div>
+            <img src={popularProducts} alt="cosmetic"/>
+            </div> 
     <section>
         <h1 className="first">Drogeria z kosmetykami eZebra</h1>
             <storng>Sklep internetowy z kosmetykami i perfumami ezebra.pl </storng>

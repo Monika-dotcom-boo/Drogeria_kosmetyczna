@@ -2,7 +2,9 @@
 
 @import "variable.scss";
 
-
+html {
+    font-size: 10px; 
+}
 
 * {
     margin: 0;
@@ -44,3 +46,21 @@
     text-align: center;
     font-size: $font-size;
 } 
+
+.box-layout{
+    padding: 30px 0px 30px 0px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    font-family: 'Poppins',Arial,sans-serif;
+    font-weight: 700;
+}
+
+.new-brands {
+    background: #ffffff;
+    color: #000000;
+    font-size: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
