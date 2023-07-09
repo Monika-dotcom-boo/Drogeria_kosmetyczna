@@ -97,3 +97,22 @@ body {
         background: #d8d8d8;
     }
 }
+
+.footer-heading{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.line-height li{
+    line-height: 1.2em;
+    padding: 0 15px 15px 0;
+    font-size: 1.2rem;
+}
+
+.newsletter{
+    background-position: center center;
+    background-size: cover;
+}
