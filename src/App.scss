@@ -15,11 +15,7 @@ html {
 body {
     padding: 0 90px 0 90px !important;;
 }
-.logo {
-    transform: scale(0.5);
-    width: 200px; 
-    height: auto; 
-}
+
 
 .home-content {
     padding: 9rem 10rem;
@@ -53,10 +49,10 @@ body {
     font-family: 'Poppins',Arial,sans-serif;
 }
 .main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // text-align: center;
     font-size: $font-size;
 } 
 

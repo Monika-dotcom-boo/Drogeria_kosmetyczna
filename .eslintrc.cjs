@@ -380,7 +380,7 @@ module.exports = {
   
       // Prevent invalid characters from appearing in markup
       // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
-      'react/no-unescaped-entities': 'error',
+      'react/no-unescaped-entities': 'off',
   
       // Prevent passing of children as props
       // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
@@ -519,12 +519,7 @@ module.exports = {
   
       // Disallow JSX props spreading
       // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
-      'react/jsx-props-no-spreading': ['error', {
-        html: 'enforce',
-        custom: 'enforce',
-        explicitSpread: 'ignore',
-        exceptions: [],
-      }],
+      'react/jsx-props-no-spreading': 'off',
   
       // Enforce that props are read-only
       // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md

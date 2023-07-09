@@ -5,25 +5,65 @@ import slide3 from './assets/main_picture3.png';
 import cosmetic from './assets/collistar.png';
 import cosmetic2 from './assets/dolce.png';
 import cosmetic3 from './assets/garnier.png';
-import cosmetic4 from './assets/garnier2.png';
+import cosmetic4 from './assets/joico.png';
 import cosmetic5 from './assets/loreal.png';
 import cosmetic6 from './assets/milk.png';
 import cosmetic7 from './assets/miya.png';
+import cosmetic8 from './assets/batiste.png';
+import cosmetic9 from './assets/bell.png';
+import cosmetic10 from './assets/claresa.png';
+import cosmetic11 from './assets/dax.png';
+import cosmetic12 from './assets/loreal2.png';
+import cosmetic13 from './assets/loreal3.png';
+import cosmetic14 from './assets/nivea.png';
+import cosmetic15 from './assets/skin.png';
 import newBrands from './assets/new_brands.png';
 import newsletter from './assets/newsletter.jpeg';
 import popularProducts from './assets/popular_brands.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import cartIcon from "./assets/icon-shopping-cart.svg";
 
 
 function App() {
+    const slickConfig = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true
+      }
   
-  // TU WPISZ HTML
 
   return (
-    <> 
-      <img src={Logo} className="logo" /> 
-      <header className="main-header"> "cała górna część strony"</header>            
+    <>
+      <header className="main-header flex flex-wrap">
+        <div className="logo-wrapper w-2/12 px-6">
+          <a href="/" target="_self">
+            <img src={Logo} className="logo" />
+          </a>
+        </div>
+        <form className="search w-6/12 px-6">
+          <input type="text" />
+        </form>
+        <div className="cart w-4/12 px-6">
+          <img src={cartIcon} alt="cart" />
+        </div>
+        <nav className="main-nav w-full px-6">
+          <ul>
+            <li>
+              <a href="#">Nowości</a>
+            </li>
+            <li>
+              <a href="#">Nowości</a>
+            </li>
+          </ul>
+        </nav>
+      </header>            
       <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
         <img src={slide} alt="cosmetic" />
         <img src={slide2} alt="cosmetic" />
@@ -38,7 +78,7 @@ function App() {
       <div className="flex justify-center">
         <div className="headline-name">Najpopularniejsze dziś</div>
       </div>
-      <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false} centerSlidePercentage={25} centerMode>
+      <Slider {...slickConfig}>
         <img src={cosmetic} alt="cosmetic" />
         <img src={cosmetic2} alt="cosmetic" />
         <img src={cosmetic3} alt="cosmetic" />
@@ -48,16 +88,24 @@ function App() {
         <img src={cosmetic6} alt="cosmetic" />
         <img src={cosmetic7} alt="cosmetic" />
         <img src={cosmetic} alt="cosmetic" />
-      </Carousel>
+      </Slider>
+      <div className="flex justify-center">
+        <div className="headline-name">Promocje</div>
+      </div>
+      <Slider {...slickConfig}>
+        <img src={cosmetic8} alt="cosmetic" />
+        <img src={cosmetic9} alt="cosmetic" />
+        <img src={cosmetic10} alt="cosmetic" />
+        <img src={cosmetic11} alt="cosmetic" />
+        <img src={cosmetic12} alt="cosmetic" />
+        <img src={cosmetic13} alt="cosmetic" />
+        <img src={cosmetic14} alt="cosmetic" />
+        <img src={cosmetic15} alt="cosmetic" />
+      </Slider>
       <div className="flex justify-center">
         <div className="headline-name"> Popularne marki </div>
       </div>
       <img src={popularProducts} alt="cosmetic" />
-      <div className="flex justify-center">
-
-        <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false} />
-
-      </div> 
       <section className="newsletter" style={{background: `url(${newsletter})`}}>
         {/* teksty z formularzem */}
         {' '}
