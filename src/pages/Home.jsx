@@ -22,6 +22,8 @@ import popularProducts from '../assets/popular_brands.png';
 // import  from '../assets/popular_brands.png';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
     const slickConfig = {
@@ -77,11 +79,32 @@ function Home() {
           <div className="headline-name"> Popularne marki </div>
         </div>
         <img src={popularProducts} alt="cosmetic" />
-        <section className="newsletter" style={{background: `url(${newsletter})`}}>
-          <p>Dołącz do społeczności oraz do naszego Klubu Prenium</p>
-          <h4>jest nas ju kilkaset tysięcy</h4>
-          <div className="agreement"> Wyrażam zgodę na przekazanie mojego adresu email do firmy H2A sp z o.o. sp.k w celu  przetwarzania do celów marketingowych zgodnie z polityką prywatności </div>
-        </section>
+        <div className="relative">
+          <div className="absolute newsletter-bg"><img src={newsletter} className="newsletter-image" /></div>
+          <section className="newsletter flex justify-end">
+            <form className="w-6/12 py-40">
+              <div className="text-5xl text-center mb-10">
+                Dołącz do społeczności
+                {' '}
+                <br />
+                {' '}
+                oraz do 
+                {' '}
+                <span className="purple-color"> naszego Klubu Prenium </span>
+              </div> 
+              <div className="text-7xl text-center mb-6">jest nas już kilkaset tysięcy</div>
+              <div className="flex justify-center">
+                <input type="text" placeholder="Twoje imię" className="standard-input mr-4"   />
+                <div className="">
+                  <input type="text" placeholder="Twój email" className="standard-input" />
+                  <button className="arrow-button" type="submit">
+                    <FontAwesomeIcon icon={faArrowRight} size="lg" />
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
         <div className="home-content">
           <section>
             <div className="PageTitle">
