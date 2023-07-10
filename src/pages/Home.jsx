@@ -19,6 +19,7 @@ import cosmetic15 from '../assets/skin.png';
 import newBrands from '../assets/new_brands.png';
 import newsletter from '../assets/newsletter.jpeg';
 import popularProducts from '../assets/popular_brands.png';
+// import  from '../assets/popular_brands.png';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
 
@@ -77,11 +78,10 @@ function Home() {
         </div>
         <img src={popularProducts} alt="cosmetic" />
         <section className="newsletter" style={{background: `url(${newsletter})`}}>
-          {/* teksty z formularzem */}
-          {' '}
-          pp
+          <p>Dołącz do społeczności oraz do naszego Klubu Prenium</p>
+          <h4>jest nas ju kilkaset tysięcy</h4>
+          <div className="agreement"> Wyrażam zgodę na przekazanie mojego adresu email do firmy H2A sp z o.o. sp.k w celu  przetwarzania do celów marketingowych zgodnie z polityką prywatności </div>
         </section>
-
         <div className="home-content">
           <section>
             <div className="PageTitle">
