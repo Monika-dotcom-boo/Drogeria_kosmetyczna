@@ -3,8 +3,25 @@ import cartIcon from "../assets/icon-shopping-cart.svg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { element } from 'prop-types';
 
 function Header() {
+  const navElements =[
+    "Nowości", 
+    "Marki",
+    "Makijaż",
+    "Pielęgnacja",
+    "Włosy", 
+    "Perfumy",
+    "Paznokcie", 
+    "Akcesoria", 
+    "Dom",
+    "Men",
+    "Zdrowie", 
+    "Erotyka", 
+    "Zestawy", 
+    "Promocje"
+  ]
     return (
       <header className="main-header flex flex-wrap">
         <div className="logo-wrapper w-2/12 px-6 py-6">
@@ -23,51 +40,13 @@ function Header() {
         </div>
         <nav className="main-nav w-full px-6 ">
           <ul className="flex justify-between w-full ">
-            <li>
-              <Link to="/category">Nowości</Link>
-            </li>
-            <li>
-              <a href="#">Marki</a>
-            </li>
-            <li>
-              <a href="#">Makijaź</a>
-            </li>
-            <li>
-              <a href="#">Pielęgnacja</a>
-            </li>
-            <li>
-              <a href="#">Włosy</a>
-            </li>
-            <li>
-              <a href="#">Perfumy</a>
-            </li>
-            <li>
-              <a href="#">Paznokcie</a>
-            </li>
-            <li>
-              <a href="#">Akcesoria</a>
-            </li>
-            <li>
-              <a href="#">Dom</a>
-            </li>
-            <li>
-              <a href="#">Nowości</a>
-            </li>
-            <li>
-              <a href="#">Men</a>
-            </li>
-            <li>
-              <a href="#">Zdrowie</a>
-            </li>
-            <li>
-              <a href="#">Erotyka</a>
-            </li>
-            <li>
-              <a href="#">Zestawy</a>
-            </li>
-            <li>
-              <a href="#">Promocje</a>
-            </li>
+            {
+              navElements.map(element => (
+                <li>
+                  <Link to="/category">{element}</Link>
+                </li>
+              ))
+            }
           </ul>
         </nav>
       </header> 
