@@ -1,29 +1,29 @@
 import slide from '../assets/main_picture.png';
 import slide2 from '../assets/main_picture2.png';
 import slide3 from '../assets/main_picture3.png';
-import cosmetic from '../assets/collistar.png';
-import cosmetic2 from '../assets/dolce.png';
-import cosmetic3 from '../assets/garnier.png';
-import cosmetic4 from '../assets/joico.png';
-import cosmetic5 from '../assets/loreal.png';
-import cosmetic6 from '../assets/milk.png';
-import cosmetic7 from '../assets/miya.png';
-import cosmetic8 from '../assets/batiste.png';
-import cosmetic9 from '../assets/bell.png';
-import cosmetic10 from '../assets/claresa.png';
-import cosmetic11 from '../assets/dax.png';
-import cosmetic12 from '../assets/loreal2.png';
-import cosmetic13 from '../assets/loreal3.png';
-import cosmetic14 from '../assets/nivea.png';
-import cosmetic15 from '../assets/skin.png';
+import cosmetic from '../../public/Bielenda.png';
+import cosmetic2 from '../../public/Dolce_Gabana.png';
+import cosmetic3 from '../../public/Catrice.png';
+import cosmetic4 from '../../public/Dr._Irena.png';
+import cosmetic5 from '../../public/Garnier.png';
+import cosmetic6 from '../../public/Golden_rose.png';
+import cosmetic7 from '../../public/Lirene.png';
+import cosmetic8 from '../../public/Mexx.png';
+import cosmetic9 from '../../public/Skyn.png';
+import cosmetic10 from '../../public/Gilette.png';
+import cosmetic11 from '../../public/Dr._Irena.png';
+import cosmetic12 from '../../public/Golden_rose2.png';
+import cosmetic13 from '../../public/Kanu.png';
+import cosmetic14 from '../../public/Naomi.png';
+import cosmetic15 from '../../public/Nivea.png';
 import newBrands from '../assets/new_brands.png';
 import newsletter from '../assets/newsletter.jpeg';
 import popularProducts from '../assets/popular_brands.png';
-// import  from '../assets/popular_brands.png';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {love} from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
     const slickConfig = {
@@ -65,16 +65,19 @@ function Home() {
         <div className="flex justify-center">
           <div className="headline-name">Promocje</div>
         </div>
-        <Slider {...slickConfig}>
-          <img src={cosmetic8} alt="cosmetic" />
-          <img src={cosmetic9} alt="cosmetic" />
-          <img src={cosmetic10} alt="cosmetic" />
-          <img src={cosmetic11} alt="cosmetic" />
-          <img src={cosmetic12} alt="cosmetic" />
-          <img src={cosmetic13} alt="cosmetic" />
-          <img src={cosmetic14} alt="cosmetic" />
-          <img src={cosmetic15} alt="cosmetic" />
-        </Slider>
+        <div className="love"> 
+          <img src={love} alt="love" />
+          <Slider {...slickConfig}>
+            <img src={cosmetic8} alt="cosmetic" />
+            <img src={cosmetic9} alt="cosmetic" />
+            <img src={cosmetic10} alt="cosmetic" />
+            <img src={cosmetic11} alt="cosmetic" />
+            <img src={cosmetic12} alt="cosmetic" />
+            <img src={cosmetic13} alt="cosmetic" />
+            <img src={cosmetic14} alt="cosmetic" />
+            <img src={cosmetic15} alt="cosmetic" />
+          </Slider>
+        </div>
         <div className="flex justify-center">
           <div className="headline-name"> Popularne marki </div>
         </div>
@@ -108,38 +111,36 @@ function Home() {
         <div className="home-content">
           <section>
             <div className="PageTitle">
-              Drogeria z kosmetykami eZebra
+              Drogeria z kosmetykami 
             </div> 
-            <h1 className="first">Sklep internetowy z kosmetykami i perfumami ezebra.pl </h1>
+            <h1 className="first">Sklep internetowy z kosmetykami i perfumami </h1>
             <div className="one">
-              Znajdziesz tu wyjątkowo bogaty asortyment, taki, który uwzględnia potrzeby wszystkich Klientów. Zarówno te cenowe, jak i związane z różnorodnością produktów. Artykuły drogerii internetowej ezebra.pl podzielone zostały na kilka kategorii, co zdecydowanie ułatwia zakupy i pozwala zaoszczędzić czas.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sunt maiores ipsa dicta. Nihil, delectus beatae in maxime accusamus quo ipsa laborum nam, modi reiciendis eius, laboriosam quibusdam illo aliquid.
               <br />
-              Odpowiadając na potrzeby Klientów drogeria rozwija swój asortyment i wprowadza do niego kolejne produkty oraz kategorie. Wśród nich znajdują się następujące grupy produktów: Makijaż, Pielęgnacja, Paznokcie, Akcesoria, Perfumy, Zdrowie, Dom, Men, Zestawy Prezentowe, Promocje, Nowości oraz Soczewki.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sunt maiores ipsa dicta. Nihil, delectus beatae in maxime accusamus quo ipsa laborum nam, modi reiciendis eius, laboriosam quibusdam illo aliquid.
               <br />
             </div>
           </section>
           <section>
             <h1 className="first">Duży wybór stworzony z myślą o kliencie </h1>
             <div className="one">
-              Miłośnicy i miłośniczki pięknych zapachów mogą natomiast skorzystać z oferty przygotowanej w zakładce perfumy. Proste w obsłudze i intuicyjne filtry pozwolą dobrać jeden lub kilka flakoników perfum damskich, męskich lub unisex. Bez trudu znajdziesz tutaj to, czego szukasz. Możesz też zestawić dany produkt z innymi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est cupiditate, odit eius ipsum, sunt aut dolorum amet, aliquid debitis tempore nemo quisquam pariatur. Quisquam natus quod officiis doloribus odio.
               <br />
-              Jeżeli jeszcze nie wiesz, na co warto się zdecydować, albo wahasz się między jednymi a drugimi kosmetykami, tutaj bez trudu znajdziesz wszelkie potrzebne Ci informacje. A to za sprawą dokładnego i wyczerpującego opisu. Między innymi na temat poszczególnych nut zapachowych.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia, dignissimos eum amet illum quisquam autem? Deleniti vitae omnis magnam, provident expedita hic! Excepturi quia quo exercitationem sunt ea? Sapiente.
               <br />
             </div>
           </section> 
           <section>
             <h1 className="first">Sposób na perfekcyjny makijaż </h1>
             <div className="one">
-              Dzięki gamie produktów do makijażu dostępnych w drogerii eZebra, każdy make-up zostanie wykonany w sposób perfekcyjny. 
-              Miłośniczki takich kosmetyków mogą wybierać wśród: produktów do pielęgnacji ust, pomadek i szminek, błyszczyków, palety cieni do powiek, korektorów, kredek do oczu, podkładów i kremów BB, CC i wielu innych. Co więcej, ceny są tutaj bardzo konkurencyjne, nawet po uwzględnieniu kosztów przesyłki.
-              <br />
-              Warto na bieżąco sprawdzać aktualne okazje umieszczane w zakładce promocje. Kilku, a nawet kilkudziesięciozłotowe obniżki cen stanowią propozycje, które koniecznie musisz wziąć pod uwagę podczas robienia kolejnych zakupów w sieci. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi alias, maxime quidem voluptatibus assumenda, possimus officiis atque aspernatur ex suscipit fugiat, sapiente odio necessitatibus tempore officia consequuntur eos voluptas. 
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque facilis aut assumenda excepturi quos voluptates error dolore vero! Recusandae temporibus placeat quaerat praesentium earum! Eveniet labore temporibus voluptates illo.
               {' '}
               <br />
-              Dużym ułatwieniem dla każdego, kto odwiedza sklep, jest możliwość wyszukiwania produktów za pomocą wybranych marek. Wśród nich znalazły się m.in.: L'Oreal Paris, Max Factor czy Revlon Professional. 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius ipsa nisi accusamus quas voluptatibus omnis ex ea! Quam aspernatur vero tempore perferendis molestiae excepturi beatae saepe obcaecati voluptas quae.
               {' '}
               <br />
-              Potrzebujesz kosmetyków? To miejsce jest dla Ciebie! 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum culpa sunt perspiciatis eum ad! Consectetur similique vitae voluptas nesciunt pariatur laborum accusantium quis ut fuga doloremque? Vero enim animi inventore.
               {' '}
               <br />
             </div>
@@ -147,16 +148,16 @@ function Home() {
           <section>
             <h1 className="first">Dla Ciebie i Twojego domu </h1> 
             <div className="one">
-              Dopełnienie całości stanowi zakładka z akcesoriami. Zestawy do manicure, lusterka kosmetyczne, szczotki do włosów, spinki do włosów i wiele innych tego typu produktów znajdziesz w jednym miejscu. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe esse facilis cumque placeat quos excepturi quod magni iusto repudiandae beatae, dolor sit possimus veritatis rerum quis ab voluptates maiores sapiente.
               {' '}
               <br />
-              Akcesoria to również pędzle do makijażu topowych marek. Kupisz je bez potrzeby wyprawy do galerii handlowej. I co ważne, będziesz mieć wystarczającą ilość czasu, aby dokładnie zapoznać się z ich opisem i charakterystyką. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora impedit mollitia unde omnis quaerat dolorum accusamus quibusdam totam molestiae. Nemo, ipsa impedit. Doloribus repellendus iusto, vitae facere explicabo nostrum.
               {' '}
               <br />
-              Produkty dostępne w ezebra.pl to jednak nie tylko kosmetyki dla Ciebie, ale również dla Twojego domu. W zakładce Dom znajdziesz m.in. artykuły do aromaterapii, środki czystości czy odświeżacze. 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis, et reiciendis fugit tenetur aut officiis eos assumenda. Ratione impedit quam totam sunt, blanditiis beatae quisquam corrupti laboriosam quaerat expedita.
               {' '}
               <br />
-              Drogeria ezebra.pl zadba również o Twoją formę psychiczną i fizyczną. W zakładce zdrowie znajdziesz m.in. zdrową żywność oraz suplementy diety. Jeżeli zależy Ci na tym, aby zadbać o swój wygląd, zdrowie i atmosferę w domu eZebra jest dobrym miejscem na zrobienie kompleksowych zakupów. 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem tempore, sequi atque ipsam quam? Iusto in exercitationem, ducimus ipsa hic illum! Quis, ea rerum odit dignissimos dolorum voluptatem perferendis.
               {' '}
               <br />
             </div>

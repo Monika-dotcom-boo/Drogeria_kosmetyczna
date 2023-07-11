@@ -1,8 +1,9 @@
-import Logo from '../assets/logo.png';
+import Logo from '../assets/Lorem_impsum_logo.png';
 import cartIcon from "../assets/icon-shopping-cart.svg";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from  '@fontawesome/icon=faHeart';
 
 
 function Header() {
