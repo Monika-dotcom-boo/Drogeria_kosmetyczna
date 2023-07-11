@@ -23,7 +23,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import {love} from '@fortawesome/free-solid-svg-icons';
+import Product from '../components/Product';
 
 function Home() {
     const slickConfig = {
@@ -52,32 +52,32 @@ function Home() {
           <div className="headline-name">Najpopularniejsze dziś</div>
         </div>
         <Slider {...slickConfig}>
-          <img src={cosmetic} alt="cosmetic" />
-          <img src={cosmetic2} alt="cosmetic" />
-          <img src={cosmetic3} alt="cosmetic" />
-          <img src={cosmetic4} alt="cosmetic" />
-          <img src={cosmetic5} alt="cosmetic" />
-          <img src={cosmetic5} alt="cosmetic" />
-          <img src={cosmetic6} alt="cosmetic" />
-          <img src={cosmetic7} alt="cosmetic" />
-          <img src={cosmetic} alt="cosmetic" />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic2} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
         </Slider>
         <div className="flex justify-center">
           <div className="headline-name">Promocje</div>
         </div>
-        <div className="love"> 
-          <img src={love} alt="love" />
-          <Slider {...slickConfig}>
-            <img src={cosmetic8} alt="cosmetic" />
-            <img src={cosmetic9} alt="cosmetic" />
-            <img src={cosmetic10} alt="cosmetic" />
-            <img src={cosmetic11} alt="cosmetic" />
-            <img src={cosmetic12} alt="cosmetic" />
-            <img src={cosmetic13} alt="cosmetic" />
-            <img src={cosmetic14} alt="cosmetic" />
-            <img src={cosmetic15} alt="cosmetic" />
-          </Slider>
-        </div>
+        <Slider {...slickConfig}>
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic9} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+
+
+        </Slider>
         <div className="flex justify-center">
           <div className="headline-name"> Popularne marki </div>
         </div>
