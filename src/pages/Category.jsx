@@ -8,57 +8,84 @@ function Category() {
         <div className="flex">
           <div className="border-r border-solid border-gray-400 w-3/12 p-5 pt-10">
             <div className="bold upersace text-3xl w-full text-left relative uppercase font-bold flex-wrap">
-              Kategoria
+              Kategorie
             </div>
             <div className="w-full text-3xl mt-14  ml-10 px-25 font-bold">
               Wszystkie kategorie
             </div>
-            <div className="lowercase pb-2">
+            <div>
               <ul>
-                <div className="lowercase pb-2">
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
                   <li>
                     Nowości 
                   </li>
                 </div>
-                <li>
-                  Marki 
-                </li>
-                <li>
-                  Makijaż 
-                </li>
-                <li>
-                  Pielęgnacja 
-                </li>
-                <li>
-                  Włosy
-                </li>
-                <li>
-                  Perfumy
-                </li>
-                <li>
-                  Paznokcie
-                </li>
-                <li>
-                  Akcesoria
-                </li>
-                <li>
-                  Dom 
-                </li>
-                <li>
-                  Men 
-                </li>
-                <li>
-                  Zdrowie 
-                </li>
-                <li>
-                  Erotyka 
-                </li>
-                <li>
-                  Zestawy 
-                </li>
-                <li>
-                  Promocje
-                </li>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  <li>
+                    Marki 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Makijaż 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Pielęgnacja 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Włosy
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Perfumy
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Paznokcie
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Akcesoria
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Dom 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Men 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+
+                  <li>
+                    Zdrowie 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Erotyka 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Zestawy 
+                  </li>
+                </div>
+                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
+                  <li>
+                    Promocje
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
