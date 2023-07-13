@@ -135,13 +135,13 @@ function Home() {
             <div className="one">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi alias, maxime quidem voluptatibus assumenda, possimus officiis atque aspernatur ex suscipit fugiat, sapiente odio necessitatibus tempore officia consequuntur eos voluptas. 
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque facilis aut assumenda excepturi quos voluptates error dolore vero! Recusandae temporibus placeat quaerat praesentium earum! Eveniet labore temporibus voluptates illo.
-              {' '}
+             
               <br />
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius ipsa nisi accusamus quas voluptatibus omnis ex ea! Quam aspernatur vero tempore perferendis molestiae excepturi beatae saepe obcaecati voluptas quae.
-              {' '}
+             
               <br />
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum culpa sunt perspiciatis eum ad! Consectetur similique vitae voluptas nesciunt pariatur laborum accusantium quis ut fuga doloremque? Vero enim animi inventore.
-              {' '}
+             
               <br />
             </div>
           </section>
@@ -149,16 +149,16 @@ function Home() {
             <h1 className="first">Dla Ciebie i Twojego domu </h1> 
             <div className="one">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe esse facilis cumque placeat quos excepturi quod magni iusto repudiandae beatae, dolor sit possimus veritatis rerum quis ab voluptates maiores sapiente.
-              {' '}
+              
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora impedit mollitia unde omnis quaerat dolorum accusamus quibusdam totam molestiae. Nemo, ipsa impedit. Doloribus repellendus iusto, vitae facere explicabo nostrum.
-              {' '}
+              
               <br />
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis, et reiciendis fugit tenetur aut officiis eos assumenda. Ratione impedit quam totam sunt, blanditiis beatae quisquam corrupti laboriosam quaerat expedita.
-              {' '}
+             
               <br />
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem tempore, sequi atque ipsam quam? Iusto in exercitationem, ducimus ipsa hic illum! Quis, ea rerum odit dignissimos dolorum voluptatem perferendis.
-              {' '}
+              
               <br />
             </div>
           </section>  
