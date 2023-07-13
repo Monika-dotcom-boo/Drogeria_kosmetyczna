@@ -15,77 +15,48 @@ function Category() {
             </div>
             <div>
               <ul>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                  <li>
-                    Nowości 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                  <li>
-                    Marki 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Makijaż 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Pielęgnacja 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Włosy
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Perfumy
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Paznokcie
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Akcesoria
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Dom 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Men 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-
-                  <li>
-                    Zdrowie 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Erotyka 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Zestawy 
-                  </li>
-                </div>
-                <div className="lowercase pb-2 text-3xl mt-5 px-20 capitalize">
-                  <li>
-                    Promocje
-                  </li>
-                </div>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Nowości 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Marki 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Makijaż 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Pielęgnacja 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Włosy
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Perfumy
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Paznokcie
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Akcesoria
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Dom 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Men 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Zdrowie 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Erotyka 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Zestawy 
+                </li>
+                <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
+                  Promocje
+                </li>
               </ul>
             </div>
           </div>

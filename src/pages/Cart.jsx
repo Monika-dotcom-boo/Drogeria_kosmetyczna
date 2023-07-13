@@ -1,8 +1,10 @@
 function Cart() {
   return (
     <div>
-      {/* Zawartość podstrony "Cart" */}
+      <h2>Koszyk</h2>
+      <p>Koszyk jest pusty.</p>
     </div>
+    
   );
 }
 
