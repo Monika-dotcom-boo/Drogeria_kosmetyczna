@@ -12,10 +12,12 @@ function Product({
       <div className="product">
         <div className="flex justify-between px-20">
           <FontAwesomeIcon 
+            className="cursor-pointer"
             onClick={() => addToCart(id)} 
             icon={faCartShopping} size="2xl"
           /> 
           <FontAwesomeIcon
+            className="cursor-pointer"
             onClick={() => addToFavorites(id)}
             icon={faHeart} size="2xl"
           /> 

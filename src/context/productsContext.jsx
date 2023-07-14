@@ -85,6 +85,10 @@ export function ProductsProvider({children}){
     } 
   }
 
+  const getProductById = (productID) => {
+    return products.find(product => product.id === productID)
+  }
+
   useEffect(()=>{
     (async () => { 
       try {
@@ -109,7 +113,8 @@ export function ProductsProvider({children}){
       decreaseQtyInCart, 
       removeFromCart,
       addToFavorites,
-      removeFavorite
+      removeFavorite,
+      getProductById
     }}
     > 
       {children}
