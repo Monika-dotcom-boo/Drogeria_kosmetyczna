@@ -15,11 +15,13 @@ export function ProductsProvider({children}){
   useEffect(()=>{
     (async () => { 
       try {
-      const { data, error } = await Api
-        .from('products')
-        .select('*')
-      
-      setProducts(data)
+        const { data, error } = await Api
+          .from('products')
+          .select('*')
+
+        if (!error){
+          setProducts(data)
+        }
       } catch (error) {
         console.log('Error in fetching products: ', error)
       }
