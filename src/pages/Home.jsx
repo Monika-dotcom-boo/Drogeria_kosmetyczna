@@ -12,6 +12,7 @@ import Product from '../components/Product';
 import { useProducts } from '../context/productsContext';
 import { useSearch } from '../context/searchContext';
 import {useEffect, useState } from 'react';
+import Api from "../api/api"
 
 function Home() {
     const slickConfig = {
@@ -27,6 +28,36 @@ function Home() {
 
     const [filteredProducts, setFilteredProducts] = useState(products);
     const [promoProducts, setPromoProducts] = useState(products);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleAddToNewsletter = async (e) => {
+      try {
+        e.preventDefault();
+
+        if (!name || !email) {
+          alert('Email and name is required!')
+          return
+        }
+
+        const { error } = await Api
+          .from('newsletter')
+          .insert([
+            { name, email},
+          ])
+        .select()
+
+        if (!error) {
+          setName('')
+          setEmail('')
+        } else {
+          console.log('Error in adding entry to newsletter: ', error)
+        }
+
+      } catch (error) {
+        console.log('Error in adding entry to newsletter: ', error)
+      }
+    }
 
     useEffect(() => {
       const filteredProducts = products.filter(product => {
@@ -87,7 +118,7 @@ function Home() {
         <div className="relative">
           <div className="absolute newsletter-bg"><img src={newsletter} className="newsletter-image" /></div>
           <section className="newsletter flex justify-end">
-            <form className="w-6/12 py-40">
+            <form className="w-6/12 py-40" onSubmit={handleAddToNewsletter}>
               <div className="text-5xl text-center mb-10">
                 Dołącz do społeczności
                 {' '}
@@ -99,9 +130,9 @@ function Home() {
               </div> 
               <div className="text-7xl text-center mb-6">jest nas już kilkaset tysięcy</div>
               <div className="flex justify-center">
-                <input type="text" placeholder="Twoje imię" className="standard-input mr-4"   />
+                <input value={name} onInput={(e) => setName(e.target.value)} type="text" placeholder="Twoje imię" className="standard-input mr-4"   />
                 <div className="">
-                  <input type="text" placeholder="Twój email" className="standard-input" />
+                  <input value={email} onInput={(e) => setEmail(e.target.value)} type="text" placeholder="Twój email" className="standard-input" />
                   <button className="arrow-button" type="submit">
                     <FontAwesomeIcon icon={faArrowRight} size="lg" />
                   </button>
