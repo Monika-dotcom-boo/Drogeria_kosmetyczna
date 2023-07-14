@@ -1,9 +1,12 @@
 import Product from '../components/Product';
 import { useProducts } from '../context/productsContext';
+import { useSearch } from '../context/searchContext';
 import { useState, useEffect } from 'react'
 
 function Category() {
   const {products, categories} = useProducts()
+  const { searchedValue } = useSearch()
+
   const [activeCategory, setActiveCategory] = useState(null)
   const [filteredProducts, setFilteredProducts] = useState(products);
 
@@ -22,11 +25,17 @@ function Category() {
         return true
       }
       return product.category === activeCategory
+    }).filter(product => {
+      if (!searchedValue) {
+        return true
+      }
+
+      return product.name.toLowerCase().includes(searchedValue.toLocaleLowerCase())
     })
 
     setFilteredProducts(filteredProducts)
 
-  }, [products, activeCategory]);
+  }, [products, activeCategory, searchedValue]);
 
   return (
     <div className="py-14 pb-20">

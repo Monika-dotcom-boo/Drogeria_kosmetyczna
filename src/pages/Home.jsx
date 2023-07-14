@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Product from '../components/Product';
 import { useProducts } from '../context/productsContext';
+import { useSearch } from '../context/searchContext';
+import {useEffect, useState } from 'react';
 
 function Home() {
     const slickConfig = {
@@ -21,9 +23,33 @@ function Home() {
         autoplay: true
     }
     const {products} = useProducts()
-    const promoProducts = products.filter((product)=>{
-      return !product.pricePromo
-    })
+    const { searchedValue } = useSearch()
+
+    const [filteredProducts, setFilteredProducts] = useState(products);
+    const [promoProducts, setPromoProducts] = useState(products);
+
+    useEffect(() => {
+      const filteredProducts = products.filter(product => {
+        if (!searchedValue) {
+          return true
+        }
+  
+        return product.name.toLowerCase().includes(searchedValue.toLocaleLowerCase())
+      })
+
+      setFilteredProducts(filteredProducts)
+
+      setPromoProducts(products.filter((product)=>{
+        return !product.pricePromo
+      }).filter(product => {
+        if (!searchedValue) {
+          return true
+        }
+  
+        return product.name.toLowerCase().includes(searchedValue.toLocaleLowerCase())
+      }))
+  
+    }, [products, searchedValue]);
 
     return (
       <>
@@ -42,7 +68,7 @@ function Home() {
           <div className="headline-name">Najpopularniejsze dziś</div>
         </div>
         <Slider {...slickConfig}>
-          {products ? products.map((product) => (
+          {filteredProducts ? filteredProducts.map((product) => (
             <Product key={`news-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
           )) : null}
         </Slider>
