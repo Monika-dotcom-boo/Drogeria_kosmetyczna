@@ -8,9 +8,10 @@ export const ProductsContext = createContext({
 })
 
 export function ProductsProvider({children}){
-  const [products,setProducts] = useState([]) 
-  const [cart,setCart] = useState([]) 
-  const [favorites,setfavorites] = useState([]) 
+  const [products,setProducts] = useState([])
+  const [cart,setCart] = useState([])
+  const [favorites,setfavorites] = useState([])
+  const [categories,setCategories] = useState([])
 
   const addToCart = (productID) => {
     const foundIndex = cart.findIndex((elem) => {
@@ -104,6 +105,12 @@ export function ProductsProvider({children}){
       }
     })()
   }, [])
+
+  useEffect(() => {
+    const categories = products.map(product => product.category);
+    setCategories([...new Set(categories)])
+  }, [products])
+
   return (
     <ProductsContext.Provider value={{
       products, 
@@ -114,7 +121,8 @@ export function ProductsProvider({children}){
       removeFromCart,
       addToFavorites,
       removeFavorite,
-      getProductById
+      getProductById,
+      categories
     }}
     > 
       {children}

@@ -1,10 +1,35 @@
 import Product from '../components/Product';
 import { useProducts } from '../context/productsContext';
+import { useState, useEffect } from 'react'
 
 function Category() {
-  const {products} = useProducts()
+  const {products, categories} = useProducts()
+  const [activeCategory, setActiveCategory] = useState(null)
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
+  const handleCategoryClick = (category) => {
+    if (category === activeCategory) {
+      setActiveCategory(null)
+      return
+    }
+
+    setActiveCategory(category)
+  }
+
+  useEffect(() => {
+    const filteredProducts = products.filter(product => {
+      if (!activeCategory) {
+        return true
+      }
+      return product.category === activeCategory
+    })
+
+    setFilteredProducts(filteredProducts)
+
+  }, [products, activeCategory]);
+
   return (
-    <>
+    <div className="py-14 pb-20">
       <div className="Category text-7xl lowercase w-full border-b border-solid border-gray-400 pb-5 "> Kategorie</div>
       <div className="flex">
         <div className="border-r border-solid border-gray-400 w-3/12 p-5 pt-10">
@@ -16,54 +41,17 @@ function Category() {
           </div>
           <div>
             <ul>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Nowości 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Marki 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Makijaż 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Pielęgnacja 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Włosy
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Perfumy
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Paznokcie
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Akcesoria
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Dom 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Men 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Zdrowie 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Erotyka 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Zestawy 
-              </li>
-              <li className="lowercase pb-2 text-3xl mt-5 px-20 capitalize px-xxs">
-                Promocje
-              </li>
+              {categories ? categories.map(category => (
+                <li key={category} onClick={() => handleCategoryClick(category)} className={`lowercase pb-2 text-3xl mt-5 px-20 capitalize cursor-pointer ${activeCategory === category ? 'underline' : ''}`}>
+                  {category}
+                </li>
+              )) : null}
             </ul>
           </div>
         </div>
         <div className="w-9/12 p-5"> 
           <div className="flex flex-wrap pt-10">
-            {products ? products.map((product) => (
+            {filteredProducts ? filteredProducts.map((product) => (
               <div key={product.id} className="w-4/12 mb-40">
                 <Product id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
               </div>
@@ -71,7 +59,7 @@ function Category() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

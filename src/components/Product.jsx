@@ -22,7 +22,9 @@ function Product({
             icon={faHeart} size="2xl"
           /> 
         </div>
-        <img src={image} />
+        <div className="flex justify-center">
+          <img className="max-h-[260px]" src={image} />
+        </div>
         <div className=" text-2xl text-center uppercase ">  
           {name}
         </div>
