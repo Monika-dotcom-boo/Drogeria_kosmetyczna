@@ -1,17 +1,7 @@
-export async function getProduct(id) {
-    const response = await fetch(`http://localhost:5173/products/${id}`);
-    return response.json();
-}
+
+import { createClient } from '@supabase/supabase-js'
 
 
-export async function editProduct(id, data) {
-    const response = await fetch(`http://localhost:5173/products/${id}`, {
-        method: "put",
-        body: JSON.stringify(data),
-        headers: {
-            "Content-Type": "application/json",
-        },
-    });
+const supabase = createClient('https://mbatjouyzuanbuijmtzd.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1iYXRqb3V5enVhbmJ1aWptdHpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODkwMDY5MjAsImV4cCI6MjAwNDU4MjkyMH0.mAEv0YdJ1gGd8KPSPt50d8iB7C24XR3cZNQiddJ6j2Y')
 
-    return response.json();
-}
+export default supabase;
