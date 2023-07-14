@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types'
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import { Outlet } from 'react-router-dom'
 
-function Default({children}) {
+function Default() {
     return (
       <>
         <Header />
         <main>
-          {children}
+          <Outlet />
         </main>
         <Footer />
       </>
@@ -16,9 +16,3 @@ function Default({children}) {
 
 export default Default
 
-Default.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node
-    ]).isRequired
-};

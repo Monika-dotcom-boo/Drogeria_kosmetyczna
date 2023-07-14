@@ -9,15 +9,21 @@ import Cart from "../pages/Cart";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Default><Home /></Default>
-    },
-    {
-        path: "/category",
-        element: <Default><Category /></Default>
-    },
-    {
-        path: "/cart",
-        element: <Default><Cart /></Default>
+        element: <Default />, 
+        children:[
+            {
+                path: "/",
+                element: <Home />
+            },
+            {
+                path: "/category",
+                element: <Category />
+            },
+            {
+                path: "/cart",
+                element: <Cart />
+            }
+        ]
     }
 ]);
 
