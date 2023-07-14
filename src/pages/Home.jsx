@@ -100,7 +100,7 @@ function Home() {
         </div>
         <Slider {...slickConfig}>
           {filteredProducts ? filteredProducts.map((product) => (
-            <Product key={`news-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
+            <Product key={`news-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} pricePromo={product.pricePromo} image={product.image} />
           )) : null}
         </Slider>
         <div className="flex justify-center">
@@ -108,7 +108,7 @@ function Home() {
         </div>
         <Slider {...slickConfig}>
           {promoProducts ? promoProducts.map((product) => (
-            <Product key={`promo-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
+            <Product key={`promo-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} pricePromo={product.pricePromo} image={product.image} />
           )) : null}
         </Slider>
         <div className="flex justify-center">

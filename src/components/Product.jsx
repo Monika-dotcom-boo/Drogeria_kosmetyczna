@@ -4,7 +4,7 @@ import { useProducts } from '../context/productsContext';
 
 
 function Product({
-  id, name, brand, category, price, image 
+  id, name, brand, category, price, pricePromo, image 
 }) {
     const {addToCart, addToFavorites} = useProducts()
 
@@ -35,9 +35,16 @@ function Product({
           {category}
         </div>
         <div className=" text-4xl text-center font-bold purple-color mt-14">  
-          {price}
-          {' '}
-          zł
+          <span className={`px-4 ${pricePromo ? 'line-through text-black font-normal' : ''}`}>
+            {price}
+            zł
+          </span>
+          {pricePromo ? (
+            <span className="px-4">
+              {pricePromo}
+              zł
+            </span>
+          ) : null}
         </div>
       </div>
     )

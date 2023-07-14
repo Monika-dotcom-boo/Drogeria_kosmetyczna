@@ -62,7 +62,7 @@ function Category() {
           <div className="flex flex-wrap pt-10">
             {filteredProducts ? filteredProducts.map((product) => (
               <div key={product.id} className="w-4/12 mb-40">
-                <Product id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
+                <Product id={product.id} name={product.name} category={product.category} price={product.price} pricePromo={product.pricePromo} image={product.image} />
               </div>
             )) : null}
           </div>
