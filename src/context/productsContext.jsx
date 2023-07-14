@@ -62,6 +62,29 @@ export function ProductsProvider({children}){
     } 
   }
 
+  const addToFavorites = (productID) => {
+    const foundIndex = favorites.findIndex((elem) => {
+      return elem === productID
+    })
+    
+    if (foundIndex !== -1) {
+      return
+    } 
+
+    setfavorites([...favorites, productID])
+  }
+
+  const removeFavorite = (productID) => {
+    const foundIndex = favorites.findIndex((elem) => {
+      return elem === productID
+    })
+    if (foundIndex !== -1) {
+      let newFavorites = [...favorites];
+      newFavorites.splice(foundIndex, 1);
+      setfavorites(newFavorites);
+    } 
+  }
+
   useEffect(()=>{
     (async () => { 
       try {
@@ -84,7 +107,9 @@ export function ProductsProvider({children}){
       favorites, 
       addToCart, 
       decreaseQtyInCart, 
-      removeFromCart
+      removeFromCart,
+      addToFavorites,
+      removeFavorite
     }}
     > 
       {children}

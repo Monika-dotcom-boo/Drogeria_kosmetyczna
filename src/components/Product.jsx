@@ -6,12 +6,17 @@ import { useProducts } from '../context/productsContext';
 function Product({
   id, name, brand, category, price, image 
 }) {
-    const {addToCart} = useProducts()
+    const {addToCart, addToFavorites} = useProducts()
+
     return (
       <div className="product">
         <div className="flex justify-between px-20">
-          <FontAwesomeIcon onClick={()=> {addToCart(id)}} icon={faCartShopping} size="2xl" /> 
+          <FontAwesomeIcon 
+            onClick={() => addToCart(id)} 
+            icon={faCartShopping} size="2xl"
+          /> 
           <FontAwesomeIcon
+            onClick={() => addToFavorites(id)}
             icon={faHeart} size="2xl"
           /> 
         </div>
