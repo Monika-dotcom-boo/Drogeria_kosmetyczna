@@ -1,15 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart, faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { useProducts } from '../context/productsContext';
 
 
 function Product({
   id, name, brand, category, price, image 
 }) {
+    const {addToCart} = useProducts()
     return (
       <div className="product">
         <div className="flex justify-between px-20">
-          <FontAwesomeIcon icon={faCartShopping} size="2xl" /> 
-          <FontAwesomeIcon icon={faHeart} size="2xl" /> 
+          <FontAwesomeIcon onClick={()=> {addToCart(id)}} icon={faCartShopping} size="2xl" /> 
+          <FontAwesomeIcon
+            icon={faHeart} size="2xl"
+          /> 
         </div>
         <img src={image} />
         <div className=" text-2xl text-center uppercase ">  
