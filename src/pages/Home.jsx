@@ -24,6 +24,7 @@ import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Product from '../components/Product';
+import { useProducts } from '../context/productsContext';
 
 function Home() {
     const slickConfig = {
@@ -34,6 +35,10 @@ function Home() {
         slidesToScroll: 1,
         autoplay: true
     }
+    const {products} = useProducts()
+    const promoProducts = products.filter((product)=>{
+      return !product.pricePromo
+    })
 
     return (
       <>
@@ -52,31 +57,17 @@ function Home() {
           <div className="headline-name">Najpopularniejsze dziś</div>
         </div>
         <Slider {...slickConfig}>
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic2} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
+          {products ? products.map((product) => (
+            <Product key={`news-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
+          )) : null}
         </Slider>
         <div className="flex justify-center">
           <div className="headline-name">Promocje</div>
         </div>
         <Slider {...slickConfig}>
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic9} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-          <Product id={1} name="Lirene" brand="Lirene" category="cosmetic" price={23.34} image={cosmetic8} />
-
-
+          {promoProducts ? promoProducts.map((product) => (
+            <Product key={`promo-${product.id}`} id={product.id} name={product.name} category={product.category} price={product.price} image={product.image} />
+          )) : null}
         </Slider>
         <div className="flex justify-center">
           <div className="headline-name"> Popularne marki </div>
