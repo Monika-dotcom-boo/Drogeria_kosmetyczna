@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import PropTypes from 'prop-types';
 
 export const SearchContext = createContext({
     searchedValue: '', 
@@ -17,5 +18,9 @@ export function SearchProvider({children}){
     </SearchContext.Provider>
   )
 }
+
+SearchProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export const useSearch = () => useContext(SearchContext) 

@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart, faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import { useProducts } from '../context/productsContext';
+import PropTypes from 'prop-types';
+
 
 
 function Product({
@@ -49,5 +51,20 @@ function Product({
       </div>
     )
 }
+
+Product.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  brand: PropTypes.string,
+  category: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  pricePromo: PropTypes.number,
+  image: PropTypes.string.isRequired,
+};
+
+Product.defaultProps = {
+  brand: '', 
+  pricePromo: null, 
+};
 
 export default Product 
