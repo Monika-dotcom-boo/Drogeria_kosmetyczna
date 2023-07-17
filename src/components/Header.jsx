@@ -1,9 +1,9 @@
-import Logo from '../assets/Lorem_impsum_logo.png';
-import cartIcon from "../assets/icon-shopping-cart.svg";
+import Logo from '@/assets/Lorem_impsum_logo.png';
+import cartIcon from "@/assets/icon-shopping-cart.svg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { useSearch } from '../context/searchContext';
+import { useSearch } from '@/context/searchContext';
 
 
 function Header() {

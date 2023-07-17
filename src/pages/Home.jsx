@@ -1,18 +1,18 @@
-import slide from '../assets/main_picture.png';
-import slide2 from '../assets/main_picture2.png';
-import slide3 from '../assets/main_picture3.png';
-import newBrands from '../assets/new_brands.png';
-import newsletter from '../assets/newsletter.jpeg';
-import popularProducts from '../assets/popular_brands.png';
+import slide from '@/assets/main_picture.png';
+import slide2 from '@/assets/main_picture2.png';
+import slide3 from '@/assets/main_picture3.png';
+import newBrands from '@/assets/new_brands.png';
+import newsletter from '@/assets/newsletter.jpeg';
+import popularProducts from '@/assets/popular_brands.png';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Product from '../components/Product';
-import { useProducts } from '../context/productsContext';
-import { useSearch } from '../context/searchContext';
+import Product from '@/components/Product';
+import { useProducts } from '@/context/productsContext';
+import { useSearch } from '@/context/searchContext';
 import {useEffect, useState } from 'react';
-import Api from "../api/api"
+import Api from "@/api/api"
 
 function Home() {
     const slickConfig = {

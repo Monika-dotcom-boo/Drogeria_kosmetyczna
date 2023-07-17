@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart, faCartShopping} from '@fortawesome/free-solid-svg-icons';
-import { useProducts } from '../context/productsContext';
+import { useProducts } from '@/context/productsContext';
 import PropTypes from 'prop-types';
 
 

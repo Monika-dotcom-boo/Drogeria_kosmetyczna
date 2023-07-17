@@ -1,6 +1,6 @@
-import Product from '../components/Product';
-import { useProducts } from '../context/productsContext';
-import { useSearch } from '../context/searchContext';
+import Product from '@/components/Product';
+import { useProducts } from '@/context/productsContext';
+import { useSearch } from '@/context/searchContext';
 import { useState, useEffect } from 'react'
 
 function Category() {

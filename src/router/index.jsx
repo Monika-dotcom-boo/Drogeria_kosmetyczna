@@ -1,10 +1,10 @@
 import {
     createBrowserRouter,
 } from "react-router-dom";
-import Default from "../layouts/default";
-import Home from "../pages/Home";
-import Category from "../pages/Category";
-import Cart from "../pages/Cart";
+import Default from "@/layouts/default";
+import Home from "@/pages/Home";
+import Category from "@/pages/Category";
+import Cart from "@/pages/Cart";
 
 const router = createBrowserRouter([
     {

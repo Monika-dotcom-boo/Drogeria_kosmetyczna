@@ -1,4 +1,4 @@
-import { useProducts } from "../context/productsContext";
+import { useProducts } from "@/context/productsContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
