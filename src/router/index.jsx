@@ -1,7 +1,7 @@
 import {
     createBrowserRouter,
 } from "react-router-dom";
-import Default from "@/layouts/default";
+import Default from "@/layouts/Default";
 import Home from "@/pages/Home";
 import Category from "@/pages/Category";
 import Cart from "@/pages/Cart";
