@@ -1,5 +1,12 @@
 @import "variable.scss";
 
+@media screen and (max-width: 768px) {}
+
+
+
+
+
+
 html {
     font-size: 10px; 
 }
@@ -195,3 +202,5 @@ body {
     height: 100%;
     transform: translateX(-100px);
 }
+
+

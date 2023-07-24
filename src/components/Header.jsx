@@ -43,7 +43,7 @@ function Header() {
         </Link>
       </div>
       <nav className="main-nav w-full px-6 ">
-        <ul className="flex justify-between w-full ">
+        <ul className="flex flex-wrap justify-between w-full ">
           {
             navElements.map(element => (
               <li key={element}>

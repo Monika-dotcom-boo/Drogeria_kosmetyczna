@@ -40,8 +40,8 @@ function Category() {
   return (
     <div className="py-14 pb-20">
       <div className="Category text-7xl lowercase w-full border-b border-solid border-gray-400 pb-5 "> Kategorie</div>
-      <div className="flex">
-        <div className="border-r border-solid border-gray-400 w-3/12 p-5 pt-10">
+      <div className="flex flex-wrap ">
+        <div className="md:border-r border-solid border-gray-400 w-full xl:w-3/12 md:w-5/12  lg:w-4/12 p-5 pt-10">
           <div className="bold upersace text-3xl w-full text-left relative uppercase font-bold flex-wrap">
             Kategorie
           </div>
@@ -58,10 +58,10 @@ function Category() {
             </ul>
           </div>
         </div>
-        <div className="w-9/12 p-5"> 
+        <div className="w-full xl:w-9/12 lg:w-8/12 md:w-7/12 p-5"> 
           <div className="flex flex-wrap pt-10">
             {filteredProducts ? filteredProducts.map((product) => (
-              <div key={product.id} className="w-4/12 mb-40">
+              <div key={product.id} className=" w-full  md:w-6/12 lg:w-4/12 xl:w-3/12 mb-40">
                 <Product id={product.id} name={product.name} category={product.category} price={product.price} pricePromo={product.pricePromo} image={product.image} />
               </div>
             )) : null}

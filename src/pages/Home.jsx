@@ -118,7 +118,7 @@ function Home() {
         <div className="relative">
           <div className="absolute newsletter-bg"><img src={newsletter} className="newsletter-image" /></div>
           <section className="newsletter flex justify-end">
-            <form className="w-6/12 py-40" onSubmit={handleAddToNewsletter}>
+            <form className="w-full lg:w-6/12 py-40" onSubmit={handleAddToNewsletter}>
               <div className="text-5xl text-center mb-10">
                 Dołącz do społeczności
                 {' '}

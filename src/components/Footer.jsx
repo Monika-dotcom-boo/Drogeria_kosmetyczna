@@ -1,8 +1,8 @@
 function Footer() {
     return (
       <footer>
-        <div className="flex justify-between">
-          <div>
+        <div className="flex flex-wrap justify-between">
+          <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="footer-heading">Informacje</div> 
             <div className="line-height">
               <ul>
@@ -18,7 +18,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="footer-heading">Pomoc</div>
             <div className="line-height">
               <ul>
@@ -28,7 +28,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="footer-heading">Moje konto</div>
             <div className="line-height">
               <ul>
@@ -38,7 +38,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="footer-heading">Akcje promocyjne</div>
             <div className="line-height">
               <ul>
