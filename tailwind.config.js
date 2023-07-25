@@ -8,7 +8,10 @@ export default {
     extend: {
       fontSize: {
         xxs: '0.25rem'
-      }
+      },
+      colors: {
+        'purple': '#7a042f',
+      },
     },
   },
   plugins: [],

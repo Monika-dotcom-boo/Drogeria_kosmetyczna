@@ -2,7 +2,7 @@ function Footer() {
     return (
       <footer>
         <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
+          <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0ć">
             <div className="footer-heading">Informacje</div> 
             <div className="line-height">
               <ul>

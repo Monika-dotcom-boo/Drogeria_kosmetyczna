@@ -36,7 +36,7 @@ function Product({
         <div className=" text-2xl text-center uppercase">  
           {category}
         </div>
-        <div className=" text-4xl text-center font-bold purple-color mt-14">  
+        <div className=" text-4xl text-center font-bold text- purple mt-14">  
           <span className={`px-4 ${pricePromo ? 'line-through text-black font-normal' : ''}`}>
             {price}
             zł

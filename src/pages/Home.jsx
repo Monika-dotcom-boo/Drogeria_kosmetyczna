@@ -126,7 +126,7 @@ function Home() {
                 {' '}
                 oraz do 
                 {' '}
-                <span className="purple-color"> naszego Klubu Prenium </span>
+                <span className="text-purple"> naszego Klubu Prenium </span>
               </div> 
               <div className="text-7xl text-center mb-6">jest nas już kilkaset tysięcy</div>
               <div className="flex justify-center">
@@ -143,10 +143,10 @@ function Home() {
         </div>
         <div className="home-content">
           <section>
-            <div className="PageTitle">
+            <div className="text-purple my-6 text-3xl font-extrabold flex items-center justify-center  ">
               Drogeria z kosmetykami 
             </div> 
-            <h1 className="first">Sklep internetowy z kosmetykami i perfumami </h1>
+            <h1 className="text-xl my-6 font-extrabold text-purple block">Sklep internetowy z kosmetykami i perfumami </h1>
             <div className="one">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sunt maiores ipsa dicta. Nihil, delectus beatae in maxime accusamus quo ipsa laborum nam, modi reiciendis eius, laboriosam quibusdam illo aliquid.
               <br />
@@ -155,7 +155,7 @@ function Home() {
             </div>
           </section>
           <section>
-            <h1 className="first">Duży wybór stworzony z myślą o kliencie </h1>
+            <h1 className="text-xl my-6 font-extrabold text-purple block">Duży wybór stworzony z myślą o kliencie </h1>
             <div className="one">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est cupiditate, odit eius ipsum, sunt aut dolorum amet, aliquid debitis tempore nemo quisquam pariatur. Quisquam natus quod officiis doloribus odio.
               <br />
@@ -164,7 +164,7 @@ function Home() {
             </div>
           </section> 
           <section>
-            <h1 className="first">Sposób na perfekcyjny makijaż </h1>
+            <h1 className="text-xl my-6 font-extrabold text-purple block">Sposób na perfekcyjny makijaż </h1>
             <div className="one">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi alias, maxime quidem voluptatibus assumenda, possimus officiis atque aspernatur ex suscipit fugiat, sapiente odio necessitatibus tempore officia consequuntur eos voluptas. 
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque facilis aut assumenda excepturi quos voluptates error dolore vero! Recusandae temporibus placeat quaerat praesentium earum! Eveniet labore temporibus voluptates illo.
@@ -179,7 +179,7 @@ function Home() {
             </div>
           </section>
           <section>
-            <h1 className="first">Dla Ciebie i Twojego domu </h1> 
+            <h1 className="text-xl my-6 font-extrabold text-purple block">Dla Ciebie i Twojego domu </h1>
             <div className="one">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe esse facilis cumque placeat quos excepturi quod magni iusto repudiandae beatae, dolor sit possimus veritatis rerum quis ab voluptates maiores sapiente.
               
