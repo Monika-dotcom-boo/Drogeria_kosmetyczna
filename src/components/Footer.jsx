@@ -4,7 +4,7 @@ function Footer() {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0ć">
             <div className="text-2xl font-semibold text-black uppercase mb-6">Informacje</div> 
-            <div className="line-height">
+            <div className="leading-5 p-0 pr-15 pb-15 text-lg">
               <ul>
                 <li>
                   Informacje o firmie 
@@ -20,7 +20,7 @@ function Footer() {
           </div>
           <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="text-2xl font-semibold text-black uppercase mb-6">Pomoc</div>
-            <div className="line-height">
+            <div className="leading-5 p-0 pr-15 pb-15 text-lg">
               <ul>
                 <li>Kontakt</li>
                 <li>Wyszukiwarka</li>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
           <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="text-2xl font-semibold text-black uppercase mb-6">Moje konto</div>
-            <div className="line-height">
+            <div className="leading-5 p-0 pr-15 pb-15 text-lg">
               <ul>
                 <li> Zarejestruj się</li>
                 <li> Moje zamówienia </li>
@@ -40,7 +40,7 @@ function Footer() {
           </div>
           <div className="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 mb-10 xl:mb-0">
             <div className="text-2xl font-semibold text-black uppercase mb-6">Akcje promocyjne</div>
-            <div className="line-height">
+            <div className="leading-5 p-0 pr-15 pb-15 text-lg">
               <ul>
                 <li> Dzień Mamy </li>
                 <li> Dzień Kobiet </li>
