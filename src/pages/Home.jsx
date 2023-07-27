@@ -90,13 +90,13 @@ function Home() {
           <img src={slide3} alt="cosmetic" />
         </Carousel>
         <div className="flex justify-center">
-          <div className="headline-name">Nowe marki</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%">Nowe marki</div>
         </div>
         <div className="flex justify-center">
           <img src={newBrands} alt="cosmetic" className="image-half" />
         </div>
         <div className="flex justify-center">
-          <div className="headline-name">Najpopularniejsze dziś</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%">Najpopularniejsze dziś</div>
         </div>
         <Slider {...slickConfig}>
           {filteredProducts ? filteredProducts.map((product) => (
@@ -104,7 +104,7 @@ function Home() {
           )) : null}
         </Slider>
         <div className="flex justify-center">
-          <div className="headline-name">Promocje</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%">Promocje</div>
         </div>
         <Slider {...slickConfig}>
           {promoProducts ? promoProducts.map((product) => (
@@ -112,11 +112,11 @@ function Home() {
           )) : null}
         </Slider>
         <div className="flex justify-center">
-          <div className="headline-name"> Popularne marki </div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%"> Popularne marki </div>
         </div>
         <img src={popularProducts} alt="cosmetic" />
         <div className="relative">
-          <div className="absolute newsletter-bg"><img src={newsletter} className="newsletter-image" /></div>
+          <div className="absolute pt-0 pl-0 w-full h-full overflow-hidden bg-white"><img src={newsletter} className="block object-cover h-full translate-x-100%" /></div>
           <section className="newsletter flex justify-end">
             <form className="w-full lg:w-6/12 py-40" onSubmit={handleAddToNewsletter}>
               <div className="text-5xl text-center mb-10">
@@ -133,7 +133,7 @@ function Home() {
                 <input value={name} onInput={(e) => setName(e.target.value)} type="text" placeholder="Twoje imię" className="standard-input mr-4"   />
                 <div className="">
                   <input value={email} onInput={(e) => setEmail(e.target.value)} type="text" placeholder="Twój email" className="standard-input" />
-                  <button className="arrow-button" type="submit">
+                  <button className="bg-fuchsia-950 decoration-white rounded-sm solid purple px-5 py-5 text-2xl" type="submit">
                     <FontAwesomeIcon icon={faArrowRight} size="lg" />
                   </button>
                 </div>
@@ -147,7 +147,7 @@ function Home() {
               Drogeria z kosmetykami 
             </div> 
             <h1 className="text-xl my-6 font-extrabold text-purple block">Sklep internetowy z kosmetykami i perfumami </h1>
-            <div className="one">
+            <div className="text-xl font flex items-center justify-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sunt maiores ipsa dicta. Nihil, delectus beatae in maxime accusamus quo ipsa laborum nam, modi reiciendis eius, laboriosam quibusdam illo aliquid.
               <br />
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sunt maiores ipsa dicta. Nihil, delectus beatae in maxime accusamus quo ipsa laborum nam, modi reiciendis eius, laboriosam quibusdam illo aliquid.
@@ -156,7 +156,7 @@ function Home() {
           </section>
           <section>
             <h1 className="text-xl my-6 font-extrabold text-purple block">Duży wybór stworzony z myślą o kliencie </h1>
-            <div className="one">
+            <div className="text-xl font flex items-center justify-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est cupiditate, odit eius ipsum, sunt aut dolorum amet, aliquid debitis tempore nemo quisquam pariatur. Quisquam natus quod officiis doloribus odio.
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia, dignissimos eum amet illum quisquam autem? Deleniti vitae omnis magnam, provident expedita hic! Excepturi quia quo exercitationem sunt ea? Sapiente.
@@ -165,7 +165,7 @@ function Home() {
           </section> 
           <section>
             <h1 className="text-xl my-6 font-extrabold text-purple block">Sposób na perfekcyjny makijaż </h1>
-            <div className="one">
+            <div className="text-xl font flex items-center justify-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi alias, maxime quidem voluptatibus assumenda, possimus officiis atque aspernatur ex suscipit fugiat, sapiente odio necessitatibus tempore officia consequuntur eos voluptas. 
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque facilis aut assumenda excepturi quos voluptates error dolore vero! Recusandae temporibus placeat quaerat praesentium earum! Eveniet labore temporibus voluptates illo.
              
@@ -180,7 +180,7 @@ function Home() {
           </section>
           <section>
             <h1 className="text-xl my-6 font-extrabold text-purple block">Dla Ciebie i Twojego domu </h1>
-            <div className="one">
+            <div className="text-xl font flex items-center justify-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe esse facilis cumque placeat quos excepturi quod magni iusto repudiandae beatae, dolor sit possimus veritatis rerum quis ab voluptates maiores sapiente.
               
               <br />

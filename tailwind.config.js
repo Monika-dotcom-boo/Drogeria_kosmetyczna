@@ -7,11 +7,16 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        xxs: '0.25rem'
+        xxs: '0.25rem',
+        text1xl:'1.3rem'
       },
       colors: {
         'purple': '#7a042f',
+        'grey': '#7d7d7d',
       },
+      font: {
+        font:'Poppin, Arial,sans-serif',
+      }
     },
   },
   plugins: [],
