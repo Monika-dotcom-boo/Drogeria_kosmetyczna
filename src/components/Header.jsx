@@ -27,14 +27,14 @@ function Header() {
   const { searchedValue, setSearchedValue } = useSearch()
 
   return (
-    <header className="main-header flex flex-wrap">
-      <div className="logo-wrapper w-2/12 px-6 py-6">
+    <header className="text1xl relative left-1/2 transform -translate-x-1/2 w-screen px-105  shadow-md flex flex-wrap">
+      <div className=" outline-none w-2/12 px-6 py-6">
         <Link to="/" target="_self">
           <img src={Logo} className="logo" />
         </Link>
       </div>
-      <form className="search w-6/12 px-6 flex items-center justify-end">
-        <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" className="search-icon" />
+      <form className=" relative w-6/12 px-6 flex items-center justify-end">
+        <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" className="absolute" />
         <input type="text" value={searchedValue} onInput={(e) => setSearchedValue(e.target.value)} placeholder="Szukaj"  />
       </form>
       <div className="cart w-4/12 px-6 flex justify-end items-center"> 

@@ -90,7 +90,7 @@ function Home() {
           <img src={slide3} alt="cosmetic" />
         </Carousel>
         <div className="flex justify-center">
-          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%">Nowe marki</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50% ::after:absolute ::after:left-full ::after:top-1/2 ::after:w-70 ::after:h-px ::after:bg-gray-300 ::before:absolute ::before:right-full ::before:top-1/2  ::before:w-70 ::before:h-px ::before:bg-gray-300">Nowe marki</div>
         </div>
         <div className="flex justify-center">
           <img src={newBrands} alt="cosmetic" className="image-half" />
@@ -117,7 +117,7 @@ function Home() {
         <img src={popularProducts} alt="cosmetic" />
         <div className="relative">
           <div className="absolute pt-0 pl-0 w-full h-full overflow-hidden bg-white"><img src={newsletter} className="block object-cover h-full translate-x-100%" /></div>
-          <section className="newsletter flex justify-end">
+          <section className="relative z-999 min-h-480 bg-contain bg-center bg-left flex justify-end">
             <form className="w-full lg:w-6/12 py-40" onSubmit={handleAddToNewsletter}>
               <div className="text-5xl text-center mb-10">
                 Dołącz do społeczności
@@ -130,9 +130,9 @@ function Home() {
               </div> 
               <div className="text-7xl text-center mb-6">jest nas już kilkaset tysięcy</div>
               <div className="flex justify-center">
-                <input value={name} onInput={(e) => setName(e.target.value)} type="text" placeholder="Twoje imię" className="standard-input mr-4"   />
+                <input value={name} onInput={(e) => setName(e.target.value)} type="text" placeholder="Twoje imię" className="w-64 px-14 py-6 pr-30 text-2xl leading-snug h-14:focus-outline-none mr-4"   />
                 <div className="">
-                  <input value={email} onInput={(e) => setEmail(e.target.value)} type="text" placeholder="Twój email" className="standard-input" />
+                  <input value={email} onInput={(e) => setEmail(e.target.value)} type="text" placeholder="Twój email" className="w-64 px-14 py-6 pr-30 text-2xl leading-snug h-14:focus-outline-none mr-4" />
                   <button className="bg-fuchsia-950 decoration-white rounded-sm solid purple px-5 py-5 text-2xl" type="submit">
                     <FontAwesomeIcon icon={faArrowRight} size="lg" />
                   </button>
@@ -141,7 +141,7 @@ function Home() {
             </form>
           </section>
         </div>
-        <div className="home-content">
+        <div className="py-9 px-10">
           <section>
             <div className="text-purple my-6 text-3xl font-extrabold flex items-center justify-center  ">
               Drogeria z kosmetykami 

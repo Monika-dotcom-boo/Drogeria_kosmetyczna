@@ -44,7 +44,7 @@ function Cart() {
       )) : null}
       </table>
 
-      <h2 className="text-5xl font-bold mb-10 text-center">Twóje ulubione</h2>
+      <h2 className="text-5xl font-bold mb-10 text-center">Twoje ulubione</h2>
       <table className="w-full">
         {favorites ? favorites.map(productInFavorites => (
           <tr className="border-b border-solid border-gray-400 text-xl">
