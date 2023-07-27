@@ -27,7 +27,7 @@ function Header() {
   const { searchedValue, setSearchedValue } = useSearch()
 
   return (
-    <header className="text1xl relative left-1/2 transform -translate-x-1/2 w-screen px-105  shadow-md flex flex-wrap">
+    <header className="text-1xl relative left-1/2 translate-x-[-50%] w-screen px-[105px] shadow-md flex flex-wrap">
       <div className=" outline-none w-2/12 px-6 py-6">
         <Link to="/" target="_self">
           <img src={Logo} className="logo" />
@@ -35,25 +35,25 @@ function Header() {
       </div>
       <form className="relative w-6/12 px-6 flex items-center justify-end">
         <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" className="absolute" />
-        <input type="text" value={searchedValue} onInput={(e) => setSearchedValue(e.target.value)} placeholder="Szukaj" className="text-4xl h-50 w-80 p-5 pr-70 :focus:outline: none border-b-2 border-solid grey"  />
+        <input type="text" value={searchedValue} onInput={(e) => setSearchedValue(e.target.value)} placeholder="Szukaj" className="text-[2rem] h-[50px] w-4/5 py-5 pl-2 pr-20 pr-70 focus:outline-none border-b-2 border-solid border-grey"  />
       </form>
-      <div className="cart w-4/12 px-6 flex justify-end items-center"> 
-        <Link to="/cart" className="pr-6"> 
+      <div className="cart w-4/12 px-6 flex justify-end items-center">
+        <Link to="/cart" className="pr-6">
           <img src={cartIcon} alt="cart" />
         </Link>
       </div>
-      <nav className="px-3 py-4 text-xs font-light uppercase block w-full :hover: color-puprle px-6 ">
+      <nav className="text-xs font-light uppercase block w-full px-6 ">
         <ul className="flex flex-wrap justify-between w-full ">
           {
-            navElements.map(element => (
-              <li key={element}>
-                <Link to="/category">{element}</Link>
-              </li>
-            ))
-          }
+                navElements.map(element => (
+                  <li key={element}>
+                    <Link className="text-[1.45rem] leading-normal font-light uppercase block px-3 pb-4 hover:color-puprle" to="/category">{element}</Link>
+                  </li>
+                ))
+              }
         </ul>
       </nav>
-    </header> 
+    </header>
   )
 }
 

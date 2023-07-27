@@ -90,13 +90,17 @@ function Home() {
           <img src={slide3} alt="cosmetic" />
         </Carousel>
         <div className="flex justify-center">
-          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50% ::after:absolute ::after:left-full ::after:top-1/2 ::after:w-70 ::after:h-px ::after:bg-gray-300 ::before:absolute ::before:right-full ::before:top-1/2  ::before:w-70 ::before:h-px ::before:bg-gray-300">Nowe marki</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-[30px] py-4 after:content-[' '] after:absolute after:right-full after:top-1/2 after:w-[70px] after:h-[1px] after:bg-[#d8d8d8] before:content-[' '] before:absolute before:left-full before:top-1/2 before:w-[70px] before:h-[1px] before:bg-[#d8d8d8]">
+            Nowe marki
+          </div>
         </div>
         <div className="flex justify-center">
           <img src={newBrands} alt="cosmetic" className="image-half" />
         </div>
         <div className="flex justify-center">
-          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%">Najpopularniejsze dziś</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-[30px] py-4 after:content-[' '] after:absolute after:right-full after:top-1/2 after:w-[70px] after:h-[1px] after:bg-[#d8d8d8] before:content-[' '] before:absolute before:left-full before:top-1/2 before:w-[70px] before:h-[1px] before:bg-[#d8d8d8]">
+            Najpopularniejsze dziś
+          </div>
         </div>
         <Slider {...slickConfig}>
           {filteredProducts ? filteredProducts.map((product) => (
@@ -104,7 +108,9 @@ function Home() {
           )) : null}
         </Slider>
         <div className="flex justify-center">
-          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%">Promocje</div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-[30px] py-4 after:content-[' '] after:absolute after:right-full after:top-1/2 after:w-[70px] after:h-[1px] after:bg-[#d8d8d8] before:content-[' '] before:absolute before:left-full before:top-1/2 before:w-[70px] before:h-[1px] before:bg-[#d8d8d8]">
+            Promocje
+          </div>
         </div>
         <Slider {...slickConfig}>
           {promoProducts ? promoProducts.map((product) => (
@@ -112,28 +118,30 @@ function Home() {
           )) : null}
         </Slider>
         <div className="flex justify-center">
-          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-30 break-after-left 50%"> Popularne marki </div>
+          <div className="flex justify-center align-center relative text-6xl text-black bg-white px-[30px] py-4 after:content-[' '] after:absolute after:right-full after:top-1/2 after:w-[70px] after:h-[1px] after:bg-[#d8d8d8] before:content-[' '] before:absolute before:left-full before:top-1/2 before:w-[70px] before:h-[1px] before:bg-[#d8d8d8]">
+            Popularne marki
+          </div>
         </div>
         <img src={popularProducts} alt="cosmetic" />
         <div className="relative">
-          <div className="absolute pt-0 pl-0 w-full h-full overflow-hidden bg-white"><img src={newsletter} className="block object-cover h-full translate-x-100%" /></div>
-          <section className="relative z-999 min-h-480 bg-contain bg-center bg-left flex justify-end">
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden bg-[#c5cbcb]"><img src={newsletter} className="block object-cover h-full translate-x-[-100px]" /></div>
+          <section className="relative z-999 min-h-[480px] bg-contain bg-center bg-left flex justify-end">
             <form className="w-full lg:w-6/12 py-40" onSubmit={handleAddToNewsletter}>
               <div className="text-5xl text-center mb-10">
                 Dołącz do społeczności
                 {' '}
                 <br />
                 {' '}
-                oraz do 
+                oraz do
                 {' '}
                 <span className="text-purple"> naszego Klubu Prenium </span>
-              </div> 
+              </div>
               <div className="text-7xl text-center mb-6">jest nas już kilkaset tysięcy</div>
               <div className="flex justify-center">
-                <input value={name} onInput={(e) => setName(e.target.value)} type="text" placeholder="Twoje imię" className="w-64 px-14 py-6 pr-30 text-2xl leading-snug h-14:focus-outline-none mr-4"   />
+                <input value={name} onInput={(e) => setName(e.target.value)} type="text" placeholder="Twoje imię" className="w-[250px] px-[14px] py-[6px] pr-30 text-[1.4rem] leading-[1.42857143] h-[54.5px] focus:outline-none mr-4"   />
                 <div className="">
-                  <input value={email} onInput={(e) => setEmail(e.target.value)} type="text" placeholder="Twój email" className="w-64 px-14 py-6 pr-30 text-2xl leading-snug h-14:focus-outline-none mr-4" />
-                  <button className="bg-fuchsia-950 decoration-white rounded-sm solid purple px-5 py-5 text-2xl" type="submit">
+                  <input value={email} onInput={(e) => setEmail(e.target.value)} type="text" placeholder="Twój email" className="w-[250px] px-[14px] py-[6px] pr-30 text-[1.4rem] leading-[1.42857143] h-[54.5px] focus:outline-none" />
+                  <button className="bg-purple text-white border-[2px] border-purple border-solid px-[1.5rem] py-[1.3rem] text-[1.5rem]" type="submit">
                     <FontAwesomeIcon icon={faArrowRight} size="lg" />
                   </button>
                 </div>

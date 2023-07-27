@@ -8,7 +8,7 @@ export default {
     extend: {
       fontSize: {
         xxs: '0.25rem',
-        text1xl:'1.3rem'
+        '1xl':'1.3rem'
       },
       colors: {
         'purple': '#7a042f',
